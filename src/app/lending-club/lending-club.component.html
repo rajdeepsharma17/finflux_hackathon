@@ -1,0 +1,31 @@
+<header class="header-6">
+    <div class="branding">
+        <a href="..." class="nav-link">
+            <clr-icon shape="vm-bug"></clr-icon>
+            <span class="title">FinFlux</span>
+        </a>
+    </div>
+    <div class="header-actions">
+        <a href="..." class="nav-link nav-text">
+            Log Out
+        </a>
+    </div>
+</header>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Member ID</th>
+            <th>Loan Amount</th>
+            <th>Term</th>
+            <th>Interest Rate</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let member of members">
+            <td>{{ member.member_id }}</td>
+            <td>{{ member.loan_amnt }}</td>
+            <td>{{ member.term }}</td>
+            <td>{{ member.int_rate }}</td>
+        </tr>
+    </tbody>
+</table>
